@@ -30,7 +30,7 @@ describe("Client extensions transactions bug reporduction", () => {
     await prisma.log.deleteMany();
   });
 
-  it("should rollback queries executed inside the extension while the extension is running", async () => {
+  it("should rollback queries executed inside the extension if a transaction is running", async () => {
     // Act
     try {
       await xprisma.$transaction(async (tx) => {
