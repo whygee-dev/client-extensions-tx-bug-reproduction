@@ -45,7 +45,7 @@ describe("Client extensions transactions bug reporduction", () => {
     } catch (error) {}
 
     // Assert
-    const users = await prisma.user.findMany();
+    const users = await xprisma.user.findMany();
     const logs = await xprisma.log.findMany();
 
     // This assertion passes
