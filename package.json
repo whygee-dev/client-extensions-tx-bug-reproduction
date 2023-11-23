@@ -1,0 +1,16 @@
+{
+  "name": "client-extensions-tx-bug-reproduction",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/whygee-dev/client-extensions-tx-bug-reproduction.git",
+  "author": "Yahya JIRARI <yahya.jirari@beeldi.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^5.5.2",
+    "vite": "^5.0.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "@prisma/client": "5.5.2"
+  }
+}
